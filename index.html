@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablero de Ajedrez</title>
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Tablero de Ajedrez</h1>
+    </header>
+    <main id="tablero">
+
+        <div id="fila1">
+            <div class="casilla">
+                <span></span>
+            </div>
+            <div class="casilla">
+                <span class="letras">a</span>
+            </div>
+            <div class="casilla">
+                <span class="letras">b</span>
+            </div>
+            <div class="casilla">
+                <span class="letras">c</span>
+                </div>
+            <div class="casilla">
+                <span class="letras">d</span>
+                </div>
+            <div class="casilla">
+                <span class="letras">e</span>
+                </div>
+            <div class="casilla">
+                <span class="letras">f</span>
+                </div>
+            <div class="casilla">
+                <span class="letras">g</span>
+                </div>
+            <div class="casilla">
+                <span class="letras">h</span>
+                </div>
+            <div class="casilla">
+                <span></span>
+                </div>
+        </div>
+        <div id="fila2">
+            <div class="casilla">
+                <span class="numeros">8</span>
+            </div>
+            <div id="a8" class="casilla tenue">
+                <span id="torre_negra_1">&#9820;</span>
+            </div>
+            <div id="b8" class="casilla opaca">
+                <span id="caballo_negro_1">&#9822;</span>
+            </div>
+            <div id="c8" class="casilla tenue">
+                <span id="alfil_negro_1">&#9821;</span>
+            </div>
+            <div id="d8" class="casilla opaca">
+                <span id="reina_negra_1">&#9819;</span>
+            </div>
+            <div id="e8" class="casilla tenue">
+                <span id="rey_negro">&#9818;</span>
+            </div>
+            <div id="f8" class="casilla opaca">
+                <span id="alfil_negro_2">&#9821;</span>
+            </div>
+            <div id="g8" class="casilla tenue">
+                <span id="caballo_negro_2">&#9822;</span>
+            </div>
+            <div id="h8" class="casilla opaca">
+                <span id="torre_negra_2">&#9820;</span>
+            </div>
+            <div class="casilla">
+                <span class="numeros">8</span>
+            </div>
+        </div>    
+        <div id="fila3">
+            <div class="casilla">
+                <span class="numeros">7</span>
+            </div>
+            <div id="a7" class="casilla opaca">
+                <span id="peon_negro_1">&#9823;</span>
+            </div>
+            <div id="b7" class="casilla tenue">
+                <span id="peon_negro_2">&#9823;</span>
+            </div>
+            <div id="c7" class="casilla opaca">
+                <span id="peon_negro_3">&#9823;</span>
+            </div>
+            <div id="d7" class="casilla tenue">
+                <span id="peon_negro_4">&#9823;</span>
+            </div>
+            <div id="e7" class="casilla opaca">
+                <span id="peon_negro_5">&#9823;</span>
+            </div>
+            <div id="f7" class="casilla tenue">
+                <span id="peon_negro_6">&#9823;</span>
+            </div>
+            <div id="g7" class="casilla opaca">
+                <span id="peon_negro_7">&#9823;</span>
+            </div>
+            <div id="h7" class="casilla tenue">
+                <span id="peon_negro_8">&#9823;</span>
+            </div>
+            <div class="casilla">
+                <span class="numeros">7</span>
+            </div>
+        </div>
+        <div id="fila4">
+            <div class="casilla"><span class="numeros">6</span></div>
+            <div id="a6" class="casilla tenue">
+                <span>&nbsp;</span>
+            </div>
+            <div id="b6" class="casilla opaca">
+                <span>&nbsp;</span>
+            </div>
+            <div id="c6" class="casilla tenue">
+                <span>&nbsp;</span>
+            </div>
+            <div id="d6" class="casilla opaca">
+                <span>&nbsp;</span>
+            </div>
+            <div id="e6" class="casilla tenue">
+                <span>&nbsp;</span>
+            </div>
+            <div id="f6" class="casilla opaca">
+                <span>&nbsp;</span>
+            </div>
+            <div id="g6" class="casilla tenue">
+                <span>&nbsp;</span>
+            </div>
+            <div id="h6" class="casilla opaca">
+                <span>&nbsp;</span>
+            </div>
+            <div class="casilla"><span class="numeros">6</span></div>
+        </div>
+        <div id="fila5">
+            <div class="casilla"><span class="numeros">5</span></div>
+            <div id="a5" class="casilla opaca">
+                <span>&nbsp;</span>
+            </div>
+            <div id="b5" class="casilla tenue">
+                <span>&nbsp;</span>
+            </div>
+            <div id="c5" class="casilla opaca">
+                <span>&nbsp;</span>
+            </div>
+            <div id="d5" class="casilla tenue">
+                <span>&nbsp;</span>
+            </div>
+            <div id="e5" class="casilla opaca">
+                <span>&nbsp;</span>
+            </div>
+            <div id="f5" class="casilla tenue">
+                <span>&nbsp;</span>
+            </div>
+            <div id="g5" class="casilla opaca">
+                <span>&nbsp;</span>
+            </div>
+            <div id="h5" class="casilla tenue">
+                <span>&nbsp;</span>
+            </div>
+            <div class="casilla"><span class="numeros">5</span></div>
+        </div>
+        <div id="fila6">
+            <div class="casilla"><span class="numeros">4</span></div>
+            <div id="a4" class="casilla tenue">
+                <span>&nbsp;</span>
+            </div>
+            <div id="b4" class="casilla opaca">
+                <span>&nbsp;</span>
+            </div>
+            <div id="c4" class="casilla tenue">
+                <span>&nbsp;</span>
+            </div>
+            <div id="d4" class="casilla opaca">
+                <span>&nbsp;</span>
+            </div>
+            <div id="e4" class="casilla tenue">
+                <span>&nbsp;</span>
+            </div>
+            <div id="f4" class="casilla opaca">
+                <span>&nbsp;</span>
+            </div>
+            <div id="g4" class="casilla tenue">
+                <span>&nbsp;</span>
+            </div>
+            <div id="h4" class="casilla opaca">
+                <span>&nbsp;</span>
+            </div>
+            <div class="casilla"><span class="numeros">4</span></div>
+        </div>
+        <div id="fila7">
+            <div class="casilla"><span class="numeros">3</span></div>
+            <div id="a3" class="casilla opaca">
+                <span>&nbsp;</span>
+            </div>
+            <div id="b3" class="casilla tenue">
+                <span>&nbsp;</span>
+            </div>
+            <div id="c3" class="casilla opaca">
+                <span>&nbsp;</span>
+            </div>
+            <div id="d3" class="casilla tenue">
+                <span>&nbsp;</span>
+            </div>
+            <div id="e3" class="casilla opaca">
+                <span>&nbsp;</span>
+            </div>
+            <div id="f3" class="casilla tenue">
+                <span>&nbsp;</span>
+            </div>
+            <div id="g3" class="casilla opaca">
+                <span>&nbsp;</span>
+            </div>
+            <div id="h3" class="casilla tenue">
+                <span>&nbsp;</span>
+            </div>
+            <div class="casilla"><span class="numeros">3</span></div>
+        </div>
+        <div id="fila8">
+            <div class="casilla"><span class="numeros">2</span></div>
+            <div id="a2" class="casilla tenue">
+                <span id="peon_blanco_1">&#9817;</span>
+            </div>
+            <div id="b2" class="casilla opaca">
+                <span id="peon_blanco_2">&#9817;</span>
+            </div>
+            <div id="c2" class="casilla tenue">
+                <span id="peon_blanco_3">&#9817;</span>
+            </div>
+            <div id="d2" class="casilla opaca">
+                <span id="peon_blanco_4">&#9817;</span>
+            </div>
+            <div id="e2" class="casilla tenue">
+                <span id="peon_blanco_5">&#9817;</span>
+            </div>
+            <div id="f2" class="casilla opaca">
+                <span id="peon_blanco_6">&#9817;</span>
+            </div>
+            <div id="g2" class="casilla tenue">
+                <span id="peon_blanco_7">&#9817;</span>
+            </div>
+            <div id="h2" class="casilla opaca">
+                <span id="peon_blanco_8">&#9817;</span>
+            </div>
+            <div class="casilla"><span class="numeros">2</span></div>
+        </div>
+        <div id="fila9">
+            <div class="casilla"><span class="numeros">1</span></div>
+            <div id="a1" class="casilla opaca">
+                <span id="torre_blanca_1">&#9814;</span>
+            </div>
+            <div id="b1" class="casilla tenue">
+                <span id="caballo_blanco_1">&#9816;</span>
+            </div>
+            <div id="c1" class="casilla opaca">
+                <span id="alfil_blanco_1">&#9815;</span>
+            </div>
+            <div id="d1" class="casilla tenue">
+                <span id="reina_blanca_1">&#9813;</span>
+            </div>
+            <div id="e1" class="casilla opaca">
+                <span id="rey_blanco">&#9812;</span>
+            </div>
+            <div id="f1" class="casilla tenue">
+                <span id="alfil_blanco_2">&#9815;</span>
+            </div>
+            <div id="g1" class="casilla opaca">
+                <span id="caballo_blanco_2">&#9816;</span>
+            </div>
+            <div id="h1" class="casilla tenue">
+                <span id="torre_blanca_2">&#9814;</span>
+            </div>
+            <div class="casilla"><span class="numeros">1</span></div>
+        </div>
+        <div id="fila10">
+            <div class="casilla">
+                <span></span>
+            </div>
+            <div class="casilla">
+                <span class="letras">a</span>
+            </div>
+            <div class="casilla">
+                <span class="letras">b</span>
+            </div>
+            <div class="casilla">
+                <span class="letras">c</span>
+                </div>
+            <div class="casilla">
+                <span class="letras">d</span>
+                </div>
+            <div class="casilla">
+                <span class="letras">e</span>
+                </div>
+            <div class="casilla">
+                <span class="letras">f</span>
+                </div>
+            <div class="casilla">
+                <span class="letras">g</span>
+                </div>
+            <div class="casilla">
+                <span class="letras">h</span>
+                </div>
+            <div class="casilla">
+                <span></span>
+                </div>
+        </div>
+    </main>
+    <footer class="footer">Derechos revervados @2021</footer>
+</body>
+</html>

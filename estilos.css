@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#tablero{
+    width: 700px;
+    height: 700px;
+    background-color: #B08103;
+    margin-top: 0%;
+    margin-left: 30%;
+}
+
+.header{
+    text-align: center;
+}
+
+.footer{
+    text-align: center;
+}
+
+.casilla{
+    width: 70px;
+    height: 70px;
+    float: left;
+    font-size: 3em;
+    text-align: center;
+}
+
+.casilla .letras{
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.casilla .numeros{
+    font-size: 0.8em;
+}
+
+.tenue{
+    background-color: #efefef;
+}
+.opaca{
+    background-color: #888;
+}
